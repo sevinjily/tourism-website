@@ -1,464 +1,439 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>ADVENTURE</title>
-        <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-        />
-        <link rel="stylesheet" href="css/style.css" />
-        <link rel="stylesheet" href="css/responsive.css" />
-        <link
-            rel="apple-touch-icon"
-            sizes="180x180"
-            href="img/apple-touch-icon.png"
-        />
-        <link
-            rel="icon"
-            type="image/png"
-            sizes="32x32"
-            href="img/favicon-32x32.png"
-        />
-        <link
-            rel="icon"
-            type="image/png"
-            sizes="16x16"
-            href="img/favicon-16x16.png"
-        />
-        <link rel="manifest" href="/site.webmanifest" />
-    </head>
-    <body
-        onload='if (window.location.href.substr(window.location.href.length - 6) == "#about") { introAboutLogoTransition(); }'
-    >
-  
-        <nav class="navbar glass" style="height: 70px">
-            <span
-                ><a href="#home" style="display: flex; align-items: center"
-                    ><img
-                        class="img2"
-                        src="./img/mountain.png"
-                        width="40"
-                        style="margin: -25px -10px -25px -20px"
-                    />
-                    <h1 class="logo">&nbsp;Macəra</h1></a
-                ></span
-            >
-            <ul class="nav-links">
-                <li>
-                    <a href="#home" id="pri" class="active cir_border">Ana Səhifə</a>
-                </li>
-                <li><a href="#events" id="sec" class="cir_border">Hadisələr</a></li>
-                <li>
-                    <a href="#explore" id="tri" class="cir_border">Araşdır</a>
-                </li>
-                <li>
-                    <a href="#tours" id="quad" class="cir_border">Turlar</a>
-                </li>
-                <li><a href="#about" id="quint" class="cir_border">Haqqında</a></li>
-                <li>
-                    <a href="#contribution" id="hex" class="cir_border"
-                        >Töhfələr</a
-                    >
-                </li>
-                <li>
-                    <a href="#contact" id="hept" class="cir_border">Əlaqə</a>
-                </li>
-                <li>
-                    <div>
-                        <input
-                            type="checkbox"
-                            class="checkbox dark"
-                            id="checkbox"
-                        />
-                        <label for="checkbox" class="label">
-                            <i class="fa fa-moon-o"></i>
-                            <i class="fa fa-sun-o"></i>
-                            <div class="ball"></div>
-                        </label>
-                    </div>
-                </li>
-            </ul>
-            <img src="./img/menu-btn.png" alt="" class="menu-btn" />
-        </nav>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ADVENTURE</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="img/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="img/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="img/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/site.webmanifest" />
+  </head>
+  <body
+    onload='if (window.location.href.substr(window.location.href.length - 6) == "#about") { introAboutLogoTransition(); }'
+  >
+    <nav class="navbar glass" style="height: 70px">
+      <span
+        ><a href="#home" style="display: flex; align-items: center"
+          ><img
+            class="img2"
+            src="./img/mountain.png"
+            width="40"
+            style="margin: -25px -10px -25px -20px"
+          />
+          <h1 class="logo">&nbsp;Macəra</h1></a
+        ></span
+      >
+      <ul class="nav-links">
+        <li>
+          <a href="#home" id="pri" class="active cir_border">Ana Səhifə</a>
+        </li>
+        <li><a href="#events" id="sec" class="cir_border">Hadisələr</a></li>
+        <li>
+          <a href="#explore" id="tri" class="cir_border">Araşdır</a>
+        </li>
+        <li>
+          <a href="#tours" id="quad" class="cir_border">Turlar</a>
+        </li>
+        <li><a href="#about" id="quint" class="cir_border">Haqqında</a></li>
+        <li>
+          <a href="#contribution" id="hex" class="cir_border">Töhfələr</a>
+        </li>
+        <li>
+          <a href="#contact" id="hept" class="cir_border">Əlaqə</a>
+        </li>
+        <li>
+          <div>
+            <input type="checkbox" class="checkbox dark" id="checkbox" />
+            <label for="checkbox" class="label">
+              <i class="fa fa-moon-o"></i>
+              <i class="fa fa-sun-o"></i>
+              <div class="ball"></div>
+            </label>
+          </div>
+        </li>
+      </ul>
+      <img src="./img/menu-btn.png" alt="" class="menu-btn" />
+    </nav>
 
+    <header id="home">
+      <div class="header-content">
+        <h2 id="quote">Rəngarəng Dünyanı Kəşf Et</h2>
+        <div class="line"></div>
+        <h1>Gəlin,birlikdə kəşf edək</h1>
+        <a
+          href="#about"
+          class="ctn"
+          onclick='removeall(); $("#quad").css("border", "2px solid whitesmoke"); $("#quad").css("border-radius", "20px");'
+          >Daha çox</a
+        >
+      </div>
+    </header>
 
-        <header id="home">
-            <div class="header-content">
-                <h2 id="quote">Rəngarəng Dünyanı Kəşf Et</h2>
-                <div class="line"></div>
-                <h1>Gəlin,birlikdə kəşf edək</h1>
-                <a
-                    href="#about"
-                    class="ctn"
-                    onclick='removeall(); $("#quad").css("border", "2px solid whitesmoke"); $("#quad").css("border-radius", "20px");'
-                    >Daha çox</a
-                >
-            </div>
-        </header>
-
-
-        <section class="events" id="events">
-            <div class="container">
-                <div class="title">
-                    <h1 class="dark">Gələcək Tədbirlər</h1>
-                    <div class="line"></div>
-                </div>
-                <div class="row">
-                    <article class="card col">
-                        <img class="card-img" src="./img/nar_bayrami.jpg" />
-                        <h4 class="dark">Nar Festivalı</h4>
-                        <p class="font-color"><strong>Səyahət müddəti:</strong>5 gün,4 unudulmaz gecə
-                            <br>
-  <strong>Ziyarət ediləcək bölgələr: </strong> Bakı, Şamaxı, Lahıc və Abşeron yarımadası
-                        </p>
-                        <a href="#" class="ctn">Detallar</a>
-                    </article>
-                    <article class="card col">
-                        <img src="./img/empowering-feminist.jpg" />
-                        <h4 class="dark">Beynəlxalq Qadınlar Günü</h4>
-                        <p class="font-color"><strong>Səyahət müddəti:</strong>5 gün,4 unudulmaz gecə
-                            <br>
-  <strong>Ziyarət ediləcək bölgələr: </strong> Bakı, Şamaxı, Lahıc və Abşeron yarımadası
-                        </p>
-                        <a href="#" class="ctn">Detallar</a>
-                    </article>
-                    <article class="card col">
-                        <img src="./img/img2.jfif" />
-                        <h4 class="dark">Formula 1</h4>
-                        <p class="font-color"><strong>Səyahət müddəti:</strong>5 gün,4 unudulmaz gecə
-                            <br>
-  <strong>Ziyarət ediləcək bölgələr: </strong> Bakı
-                        </p>
-                        <a href="#" class="ctn">Detallar</a>
-                    </article>
-                </div>
-            </div>
-        </section>
- 
-        <section class="explore" id="explore">
-            <div class="explore-content">
-                <h1>Dünyanı kəşf et</h1>
-                <div class="line"></div>
-                <p>
-                    “Səyahət insanı təvazökar edir. Dünyadakı yerinin necə kiçik olduğunu anlayırsan.” – Gustav Flaubert <br />Dünyanı kəşf etdikcə, çantanı yığıb bilet almaq və uzaqlara yola düşmək istəyəcəksən.
-                </p>
-                <a href="#" class="ctn">Daha çox kəşf et</a>
-            </div>
-        </section>
- 
-        <section class="tours" id="tours">
-            <div class="container row">
-                <div class="col content-col">
-                    <h1 class="font-color">Yaxın Zamanda Olacaq Turlar  & İstiqamətlər</h1>
-                    <div class="line"></div>
-                    <p>
-                        Cümə, 12 iyul 2025: Quba və Xınalıq Turu
-                       <br />
-                       Bazar, 14 iyul 2025 :  Lənkəran – Lerik Macərası<br />
-                       Çərşənbə, 17 iyul 2025 :  Masallı – İstisu – Viləş Gölü Turu
-                        <br />
-                        and many more ......
-                    </p>
-                    <a href="#" class="ctn">Daha ətraflı</a>
-                </div>
-                <div class="image-col">
-                    <div class="image-gallery">
-                        <img src="./img/qubaxinaliq.jpg" alt="" />
-                        <img src="./img/Seki.jpeg" alt="" />
-                        <img src="./img/Seki.jpeg" alt="" />
-                        <img src="./img/Seki.jpeg" alt="" />
-                    </div>
-                </div>
-            </div>
-            <br /><br /><br /><br />
-        </section>
-
-        <section id="about">
-            <div class="title">
-                <h1 class="font-color">Haqqımızda</h1>
-                <div class="line"></div>
-            </div>
-            <br />
-            <div id="about_us">
-                <div class="boxx">
-                    <div class="containerx">
-                        <input type="radio" name="slider" id="item-1" checked />
-                        <input type="radio" name="slider" id="item-2" />
-                        <input type="radio" name="slider" id="item-3" />
-                        <div class="cards">
-                            <label class="cardt" for="item-1" id="col-img-1">
-                                <img src="./img/carousel-img4.jpg" />
-                            </label>
-                            <label class="cardt" for="item-2" id="col-img-2">
-                                <img src="./img/carousel-img5.jpg" />
-                            </label>
-                            <label class="cardt" for="item-3" id="col-img-3">
-                                <img src="./img/carousel-img6.jpg" />
-                            </label>
-                            
-                        </div>
-                    </div>
-                    <span id="about-quad"
-                        ><a href="#home"
-                            ><center>
-                                <h1
-                                    style="
-                                        font-family: var(--ff-montserrat);
-                                        color: white;
-                                    "
-                                >
-                                    Find that
-                                </h1>
-                                <br />
-                                <img
-                                    class="img2"
-                                    src="./img/mountain_dark.jpg"
-                                    width="200"
-                                    style="border-radius: 12%"
-                                />
-                                <br />
-                                <h1 class="logo" style="font-size: 50px">
-                                    ADVENTURE
-                                </h1>
-                            </center>
-                        </a>
-                    </span>
-                </div>
-            </div>
-        </section>
-
+    <section class="events" id="events">
+      <div class="container">
         <div class="title">
-            <h1 class="font-color">Məşhur Yerlər</h1>
-            <div class="line"></div>
+          <h1 class="dark">Gələcək Tədbirlər</h1>
+          <div class="line"></div>
         </div>
-        <section class="contributors" id="contribution">
-            <div class="concard">
-                <img
-                    src="https://azvision.az/photos/2020/11/11846-1604564437.jpg"
-                    alt="profile-picture"
-                    class="pfp"
-                />
-           
-                
+        <div class="row">
+          <article class="card col">
+            <img class="card-img" src="./img/nar_bayrami.jpg" />
+            <h4 class="dark">Nar Festivalı</h4>
+            <p class="font-color">
+              <strong>Səyahət müddəti:</strong>5 gün,4 unudulmaz gecə
+              <br />
+              <strong>Ziyarət ediləcək bölgələr: </strong> Bakı, Şamaxı, Lahıc
+              və Abşeron yarımadası
+            </p>
+            <a href="#" class="ctn">Detallar</a>
+          </article>
+
+          <article class="card col">
+            <img src="./img/empowering-feminist.jpg" />
+            <h4 class="dark">Beynəlxalq Qadınlar Günü</h4>
+            <p class="font-color">
+              <strong>Səyahət müddəti:</strong>5 gün,4 unudulmaz gecə
+              <br />
+              <strong>Ziyarət ediləcək bölgələr: </strong> Bakı, Şamaxı, Lahıc
+              və Abşeron yarımadası
+            </p>
+            <a href="#" class="ctn">Detallar</a>
+          </article>
+          <article class="card col">
+            <img src="./img/img2.jfif" />
+            <h4 class="dark">Formula 1</h4>
+            <p class="font-color">
+              <strong>Səyahət müddəti:</strong>5 gün,4 unudulmaz gecə
+              <br />
+              <strong>Ziyarət ediləcək bölgələr: </strong> Bakı
+            </p>
+            <a href="#" class="ctn">Detallar</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="explore" id="explore">
+      <div class="explore-content">
+        <h1>Dünyanı kəşf et</h1>
+        <div class="line"></div>
+        <p>
+          “Səyahət insanı təvazökar edir. Dünyadakı yerinin necə kiçik olduğunu
+          anlayırsan.” – Gustav Flaubert <br />Dünyanı kəşf etdikcə, çantanı
+          yığıb bilet almaq və uzaqlara yola düşmək istəyəcəksən.
+        </p>
+        <a href="#" class="ctn">Daha çox kəşf et</a>
+      </div>
+    </section>
+
+    <section class="tours" id="tours">
+      <div class="container row">
+        <div class="col content-col">
+          <h1 class="font-color">Yaxın Zamanda Olacaq Turlar & İstiqamətlər</h1>
+          <div class="line"></div>
+          <p>
+            Cümə, 12 iyul 2025: Quba və Xınalıq Turu
+            <br />
+            Bazar, 14 iyul 2025 : Lənkəran – Lerik Macərası<br />
+            Çərşənbə, 17 iyul 2025 : Masallı – İstisu – Viləş Gölü Turu
+            <br />
+            and many more ......
+          </p>
+          <a href="#" class="ctn">Daha ətraflı</a>
+        </div>
+        <div class="image-col">
+          <div class="image-gallery">
+            <img src="./img/qubaxinaliq.jpg" alt="" />
+            <img src="./img/Seki.jpeg" alt="" />
+            <img src="./img/Seki.jpeg" alt="" />
+            <img src="./img/Seki.jpeg" alt="" />
+          </div>
+        </div>
+      </div>
+      <br /><br /><br /><br />
+    </section>
+
+    <section id="about">
+      <div class="title">
+        <!-- <h1 class="font-color">Haqqımızda</h1>
+        <div class="line"></div> -->
+      </div>
+      <br />
+      
+      <div id="about_us">
+        <div class="boxx">
+          <div class="containerx">
+            <input type="radio" name="slider" id="item-1" checked />
+            <input type="radio" name="slider" id="item-2" />
+            <input type="radio" name="slider" id="item-3" />
+            <div class="cards">
+              <label class="cardt" for="item-1" id="col-img-1">
+                <img src="./img/carousel-img4.jpg" />
+              </label>
+              <label class="cardt" for="item-2" id="col-img-2">
+                <img src="./img/carousel-img5.jpg" />
+              </label>
+              <label class="cardt" for="item-3" id="col-img-3">
+                <img src="./img/carousel-img6.jpg" />
+              </label>
             </div>
+          </div>
+            <!-- <span id="about-quad"
+              ><a href="#home"
+                ><center>
+                  <h1 style="font-family: var(--ff-montserrat); color: white">
+                    Find that
+                  </h1>
+                  <br />
+                  <img
+                    class="img2"
+                    src="./img/mountain_dark.jpg"
+                    width="200"
+                    style="border-radius: 12%"
+                  />
+                  <br />
+                  <h1 class="logo" style="font-size: 50px">ADVENTURE</h1>
+                </center>
+              </a>
+            </span> -->
+        </div>
+      </div>
+    </section>
 
+    <div class="title">
+      <h1 class="font-color">Məşhur Yerlər</h1>
+      <div class="line"></div>
+    </div>
+    <section class="contributors" id="contribution">
+      <div class="concard">
+        <img
+          src="https://azvision.az/photos/2020/11/11846-1604564437.jpg"
+          alt="profile-picture"
+          class="pfp"
+        />
+      </div>
 
-            <div class="concard">
-                <img
-                    src="https://baku.ws/storage/photos/uploads/thumbs/aspect/eYmrH0PSVwkwJiLx8MW9xuOkPBJCosBclKu62BYW.webp"
-                    alt="profile-picture"
-                    class="pfp"
-                />
-          
+      <div class="concard">
+        <img
+          src="https://baku.ws/storage/photos/uploads/thumbs/aspect/eYmrH0PSVwkwJiLx8MW9xuOkPBJCosBclKu62BYW.webp"
+          alt="profile-picture"
+          class="pfp"
+        />
+      </div>
+
+      <div class="concard">
+        <img
+          src="https://turlar.az/uploads/media/qe.jpg"
+          alt="profile-picture"
+          class="pfp"
+        />
+      </div>
+
+      <div class="concard">
+        <img
+          src="https://www.azal.az/_next/static/media/770x300_sheki_khan_4222156d6a.0fd1ccf7.jpg"
+          alt="profile-picture"
+          class="pfp"
+        />
+      </div>
+
+      <div class="concard">
+        <img
+          src="https://turlar.az/uploads/media/qe.jpg"
+          alt="profile-picture"
+          class="pfp"
+        />
+      </div>
+
+      <div class="concard">
+        <img
+          src="https://turlar.az/uploads/media/qe.jpg"
+          alt="profile-picture"
+          class="pfp"
+        />
+      </div>
+
+      <div class="concard">
+        <img
+          src="https://turlar.az/uploads/media/qe.jpg"
+          alt="profile-picture"
+          class="pfp"
+        />
+      </div>
+
+      <div class="concard">
+        <img
+          src="https://turlar.az/uploads/media/qe.jpg"
+          alt="profile-picture"
+          class="pfp"
+        />
+      </div>
+
+      <div class="concard">
+        <img
+          src="https://turlar.az/uploads/media/qe.jpg"
+          alt="profile-picture"
+          class="pfp"
+        />
+      </div>
+
+      <div class="concard">
+        <img
+          src="https://turlar.az/uploads/media/qe.jpg"
+          alt="profile-picture"
+          class="pfp"
+        />
+      </div>
+
+      <div class="concard">
+        <img
+          src="https://turlar.az/uploads/media/qe.jpg"
+          alt="profile-picture"
+          class="pfp"
+        />
+      </div>
+
+      <div class="concard">
+        <img
+          src="https://turlar.az/uploads/media/qe.jpg"
+          alt="profile-picture"
+          class="pfp"
+        />
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="title">
+        <h1 class="font-color">Bizimlə əlaqə</h1>
+        <div class="line"></div>
+      </div>
+      <div class="contact_us">
+        <form class="cform" action="" method="post">
+          <div class="crow-message">
+            <h1 class="color">Bizə mesaj göndərin</h1>
+            <div></div>
+          </div>
+          <div class="crow-in">
+            <input type="text" id="name" name="name" placeholder="Adınız" />
+            <input
+              type="text"
+              id="email"
+              name="email"
+              placeholder="E-poçt ünvanınız"
+            />
+          </div>
+          <div class="crow">
+            <div class="ccol-left">
+              <select name="country" id="country">
+                <option value="India">Azerbaijan</option>
+                <option value="Russia">Samaxi</option>
+                <option value="usa">Lenkeran</option>
+                <option value="Japan">Qebele</option>
+                <option value="France">İsmayilli</option>
+                <option value="Brazil">Masallı</option>
+              </select>
             </div>
-
-            <div class="concard">
-                <img
-                    src="https://turlar.az/uploads/media/qe.jpg"
-                    alt="profile-picture"
-                    class="pfp"
-                />
-          
+          </div>
+          <div class="crow">
+            <div class="ccol-left">
+              <textarea
+                type="text"
+                id="remarks"
+                name="remarks"
+                placeholder="Qeydləriniz..."
+                style="height: 150px"
+              ></textarea>
             </div>
+          </div>
+          <input class="crow-s" type="submit" value="Göndərin" />
+        </form>
+        <div class="cbox">
+          <div>
+            <p class="cbox-message">
+              Başqa bir üsula üstünlük verirsiniz?<br />Aşağıdakı məlumatlarla
+              bizimlə əlaqə saxlaya bilərsiniz
+            </p>
+            <div class="cbox-line"></div>
+          </div>
+          <div class="c_boxx">
+            <a href="mailto:abc@gmail.com"
+              ><i class="fa fa-envelope"></i>
+              E-poçt: tourism@adventure.com
+            </a>
+          </div>
+          <div class="c_boxx">
+            <a href="tel:+91-12345-67890"
+              ><i class="fa fa-phone"></i>
+              Phone: (+994) 123-456-67-89
+            </a>
+          </div>
+          <div class="c_boxx">
+            <a href="#"
+              ><i class="fa fa-map-marker"></i>
+              Ünvan: Bakı,Azərbaycan
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
 
-            <div class="concard">
-                <img
-                    src="https://www.azal.az/_next/static/media/770x300_sheki_khan_4222156d6a.0fd1ccf7.jpg"
-                    alt="profile-picture"
-                    class="pfp"
-                />
-           
-            </div>
+    <i class="arrow" onclick="topFunction()" id="upbtn"></i>
 
-            <div class="concard">
-                <img
-                    src="https://turlar.az/uploads/media/qe.jpg"
-                    alt="profile-picture"
-                    class="pfp"
-                />
-             
-            </div>
+    <section class="footer">
+      <span
+        >Sevinc Musayeva tərəfindən yaradılıb | © 2025 Bütün hüquqlar
+        qorunur.</span
+      >
+      <div class="social">
+        <li>
+          <a
+            href="https://github.com/sevinjily"
+            target="_blank"
+            rel="noreferrer"
+            ><i class="fa fa-github"></i
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/sevinc-musaeva-49b1a2253/"
+            target="_blank"
+            rel="noreferrer"
+            ><i class="fa fa-linkedin-square"></i
+          ></a>
+        </li>
+      </div>
+    </section>
+    <!--footer-->
 
-            <div class="concard">
-                <img
-                    src="https://turlar.az/uploads/media/qe.jpg"
-                    alt="profile-picture"
-                    class="pfp"
-                />
-            
-            </div>
+    <script>
+      const menuBtn = document.querySelector(".menu-btn");
+      const navlinks = document.querySelector(".nav-links");
 
-            <div class="concard">
-                <img
-                    src="https://turlar.az/uploads/media/qe.jpg"
-                    alt="profile-picture"
-                    class="pfp"
-                />
-             
-            </div>
-
-            <div class="concard">
-                <img
-                    src="https://turlar.az/uploads/media/qe.jpg"
-                    alt="profile-picture"
-                    class="pfp"
-                />
-           
-            </div>
-
-            <div class="concard">
-                <img
-                    src="https://turlar.az/uploads/media/qe.jpg"
-                    alt="profile-picture"
-                    class="pfp"
-                />
-             
-            </div>
-
-            <div class="concard">
-                <img
-                    src="https://turlar.az/uploads/media/qe.jpg"
-                    alt="profile-picture"
-                    class="pfp"
-                />
-              
-            </div>
-
-            <div class="concard">
-                <img
-                    src="https://turlar.az/uploads/media/qe.jpg"
-                    alt="profile-picture"
-                    class="pfp"
-                />
-              
-            </div>
-
-            <div class="concard">
-                <img
-                    src="https://turlar.az/uploads/media/qe.jpg"
-                    alt="profile-picture"
-                    class="pfp"
-                />
-             
-            </div>
-        </section>
-
-        <section id="contact">
-            <div class="title">
-                <h1 class="font-color">Bizimlə əlaqə</h1>
-                <div class="line"></div>
-            </div>
-            <div class="contact_us">
-                <form class="cform" action="" method="post">
-                    <div class="crow-message">
-                        <h1 class="color">Bizə mesaj göndərin</h1>
-                        <div></div>
-                        
-                    </div>
-                    <div class="crow-in">
-                        <input
-                            type="text"
-                            id="name"
-                            name="name"
-                            placeholder="Adınız"
-                        />
-                        <input
-                            type="text"
-                            id="email"
-                            name="email"
-                            placeholder="E-poçt ünvanınız"
-                        />
-                    </div>
-                    <div class="crow">
-                        <div class="ccol-left">
-                            <select name="country" id="country">
-                                <option value="India">Azerbaijan</option>
-                                <option value="Russia">Samaxi</option>
-                                <option value="usa">Lenkeran</option>
-                                <option value="Japan">Qebele</option>
-                                <option value="France">İsmayilli</option>
-                                <option value="Brazil">Masallı</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="crow">
-                        <div class="ccol-left">
-                            <textarea
-                                type="text"
-                                id="remarks"
-                                name="remarks"
-                                placeholder="Qeydləriniz..."
-                                style="height: 150px"
-                            ></textarea>
-                        </div>
-                    </div>
-                    <input class="crow-s" type="submit" value="Göndərin" />
-                </form>
-                <div class="cbox">
-                    <div>
-                        <p class="cbox-message">
-                            Başqa bir üsula üstünlük verirsiniz?<br />Aşağıdakı məlumatlarla bizimlə əlaqə saxlaya bilərsiniz
-                        </p>
-                        <div class="cbox-line"></div>
-                    </div>
-                    <div class="c_boxx">
-                        <a href="mailto:abc@gmail.com"
-                            ><i class="fa fa-envelope"></i>
-                            E-poçt: tourism@adventure.com
-                        </a>
-                    </div>
-                    <div class="c_boxx">
-                        <a href="tel:+91-12345-67890"
-                            ><i class="fa fa-phone"></i>
-                            Phone: (+994) 123-456-67-89
-                        </a>
-                    </div>
-                    <div class="c_boxx">
-                        <a href="#"
-                            ><i class="fa fa-map-marker"></i>
-                            Ünvan: Bakı,Azərbaycan
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <i class="arrow"  onclick="topFunction()" id="upbtn"></i>
-
-        <section class="footer">
-            <span>Sevinc Musayeva tərəfindən yaradılıb | © 2025 Bütün hüquqlar qorunur.</span>
-            <div class="social">
-                <li>
-                 
-                    <a
-                        href="https://github.com/sevinjily"
-                        target="_blank"
-                        rel="noreferrer"
-                        ><i class="fa fa-github"></i
-                    ></a>
-                    <a
-                        href="https://www.linkedin.com/in/sevinc-musaeva-49b1a2253/"
-                        target="_blank"
-                        rel="noreferrer"
-                        ><i class="fa fa-linkedin-square"></i
-                    ></a>
-                </li>
-            </div>
-        </section>
-        <!--footer-->
-
-        <script>
-            const menuBtn = document.querySelector(".menu-btn");
-            const navlinks = document.querySelector(".nav-links");
-
-            menuBtn.addEventListener("click", () => {
-                navlinks.classList.toggle("mobile-menu");
-            });
-        </script>
-        <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-        <script src="js/script.js"></script>
-    </body>
+      menuBtn.addEventListener("click", () => {
+        navlinks.classList.toggle("mobile-menu");
+      });
+    </script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="js/script.js"></script>
+  </body>
 </html>

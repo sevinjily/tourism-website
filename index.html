@@ -29,6 +29,9 @@
       href="img/favicon-16x16.png"
     />
     <link rel="manifest" href="/site.webmanifest" />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+
   </head>
   <body
     onload='if (window.location.href.substr(window.location.href.length - 6) == "#about") { introAboutLogoTransition(); }'
@@ -150,40 +153,40 @@
 
     <section class="tours" id="tours">
       <div class="container row">
-        <div class="col content-col">
+        <div class="content-col">
           <h1 class="font-color">Yaxın Zamanda Olacaq Turlar & İstiqamətlər</h1>
           <div class="line"></div>
           <p>
-            Cümə, 12 iyul 2025: Quba və Xınalıq Turu
-            <br />
-            Bazar, 14 iyul 2025 : Lənkəran – Lerik Macərası<br />
-            Çərşənbə, 17 iyul 2025 : Masallı – İstisu – Viləş Gölü Turu
-            <br />
-            and many more ......
+            Cümə, 12 iyul 2025: Quba və Xınalıq Turu<br />
+            Bazar, 14 iyul 2025: Lənkəran – Lerik Macərası<br />
+            Çərşənbə, 17 iyul 2025: Masallı – İstisu – Viləş Gölü Turu<br />
+            və daha bir çox macəra sizi gözləyir...
           </p>
           <a href="#" class="ctn">Daha ətraflı</a>
         </div>
         <div class="image-col">
           <div class="image-gallery">
-            <img src="./img/qubaxinaliq.jpg" alt="" />
-            <img src="./img/Seki.jpeg" alt="" />
-            <img src="./img/Seki.jpeg" alt="" />
-            <img src="./img/Seki.jpeg" alt="" />
+            <img src="./img/qubaxinaliq.jpg" alt="Quba və Xınalıq" />
+            <img src="./img/lenkeran (1).jpg" alt="Lənkəran" />
+            <img src="./img/masalli.jpg" alt="Masallı" />
+            <img src="./img/seki.jpg" alt="Şəki Gölü" />
           </div>
         </div>
       </div>
-      <br /><br /><br /><br />
     </section>
+    
+    
 
     <section id="about">
-      <div class="title">
-        <!-- <h1 class="font-color">Haqqımızda</h1>
-        <div class="line"></div> -->
-      </div>
+     
       <br />
       
       <div id="about_us">
         <div class="boxx">
+          <div class="title">
+            <h1 class="font-color">Haqqımızda</h1>
+            <div class="line"></div>
+          </div>
           <div class="containerx">
             <input type="radio" name="slider" id="item-1" checked />
             <input type="radio" name="slider" id="item-2" />
@@ -200,24 +203,8 @@
               </label>
             </div>
           </div>
-            <!-- <span id="about-quad"
-              ><a href="#home"
-                ><center>
-                  <h1 style="font-family: var(--ff-montserrat); color: white">
-                    Find that
-                  </h1>
-                  <br />
-                  <img
-                    class="img2"
-                    src="./img/mountain_dark.jpg"
-                    width="200"
-                    style="border-radius: 12%"
-                  />
-                  <br />
-                  <h1 class="logo" style="font-size: 50px">ADVENTURE</h1>
-                </center>
-              </a>
-            </span> -->
+        
+            
         </div>
       </div>
     </section>
@@ -261,7 +248,39 @@
 
       <div class="concard">
         <img
-          src="https://turlar.az/uploads/media/qe.jpg"
+          src="/img/Lerik_Azerbaijan.jpeg"
+          alt="profile-picture"
+          class="pfp"
+        />
+      </div>
+
+      <div class="concard">
+        <img
+          src="/img/lenkeran (1).jpg"
+          alt="profile-picture"
+          class="pfp"
+        />
+      </div>
+
+      <div class="concard">
+        <img
+          src="/img/Susa.jpg"
+          alt="profile-picture"
+          class="pfp"
+        />
+      </div>
+
+      <div class="concard">
+        <img
+          src="https://azvision.az/photos/2020/11/11846-1604564437.jpg"
+          alt="profile-picture"
+          class="pfp"
+        />
+      </div>
+
+      <div class="concard">
+        <img
+          src="https://baku.ws/storage/photos/uploads/thumbs/aspect/eYmrH0PSVwkwJiLx8MW9xuOkPBJCosBclKu62BYW.webp"
           alt="profile-picture"
           class="pfp"
         />
@@ -277,39 +296,7 @@
 
       <div class="concard">
         <img
-          src="https://turlar.az/uploads/media/qe.jpg"
-          alt="profile-picture"
-          class="pfp"
-        />
-      </div>
-
-      <div class="concard">
-        <img
-          src="https://turlar.az/uploads/media/qe.jpg"
-          alt="profile-picture"
-          class="pfp"
-        />
-      </div>
-
-      <div class="concard">
-        <img
-          src="https://turlar.az/uploads/media/qe.jpg"
-          alt="profile-picture"
-          class="pfp"
-        />
-      </div>
-
-      <div class="concard">
-        <img
-          src="https://turlar.az/uploads/media/qe.jpg"
-          alt="profile-picture"
-          class="pfp"
-        />
-      </div>
-
-      <div class="concard">
-        <img
-          src="https://turlar.az/uploads/media/qe.jpg"
+          src="https://www.azal.az/_next/static/media/770x300_sheki_khan_4222156d6a.0fd1ccf7.jpg"
           alt="profile-picture"
           class="pfp"
         />
@@ -400,6 +387,7 @@
     </section>
 
     <i class="arrow" onclick="topFunction()" id="upbtn"></i>
+    
 
     <section class="footer">
       <span

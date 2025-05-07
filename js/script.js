@@ -130,4 +130,24 @@ function updateNav() {
     });
 }
 
+
+  const form = document.querySelector('.cform');
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+
+    Swal.fire({
+      title: 'Uğurla göndərildi!',
+      text: 'Mesajınızı aldıq, təşəkkür edirik!',
+      confirmButtonText: 'Bağla',
+      confirmButtonColor: '#fc036b'
+   
+    });
+  
+
+  });
+
+
+
+
+
 window.addEventListener("scroll", updateNav);
